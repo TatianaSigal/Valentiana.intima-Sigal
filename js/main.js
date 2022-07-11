@@ -1,5 +1,4 @@
 /* Desafío Simulador interactivo*/
-let totalCarrito = 0
 
 /*function agregarAlCarrito(producto, stock) {
     const tenemosStock = validarStock(stock);
@@ -23,11 +22,16 @@ function validarStock(stockDelProducto) {
 
 agregarAlCarrito('Conjunto Cindirella',2)
 /*Lo nombré acá porque cuando agregué stock no me funciona tocando el botón, con el producto sólo si agregaba bien*/
+let producto = 'producto';
+let cantidad =0 ;    
+let total = 0;
+let totalCarrito = 1
 
-function agregarAlCarrito(producto, ) {
+function agregarAlCarrito(producto) {
   
         console.log('Agregaste Producto al carrito:' + producto);
-        totalCarrito++;
-    
+        console.log ('Tenés en total: '+ totalCarrito++ +' productos');
+        
     }
-    /*Si lo pongo así el boton me va agregando los productos, puse"coma" y la cantidad para hacer con stock desde el html pero no me funciona*/
+
+    /*Si lo pongo así el boton me va agregando los productos y la cantidad, pero si quiero agregar stock como arriba poniendo en el html el número de stock, al lado del producto, con la coma no me funciona*/
