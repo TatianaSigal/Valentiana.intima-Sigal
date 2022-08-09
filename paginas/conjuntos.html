@@ -69,6 +69,56 @@
     </div>
 
     <div class="row justify-content-between">
+
+      <div class="container">
+        <h4>Carrito de compras</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">Carrito vacío</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+  
+      <template id="template-footer">
+          <th scope="row" colspan="2">Total productos</th>
+          <td>10</td>
+          <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                  vaciar todo
+              </button>
+          </td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+      
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+
       <h1>CONJUNTOS</h1>
 
       <div class="card">
@@ -76,8 +126,8 @@
         <img src="../imagenes/CINDIRELLA.jpg" class="foto" alt="...">
         <div class="card-body">
           <h5 class="card-title">Conjunto Cindirella</h5>
-          <p class="card-text"> <br>$1500 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <p class="card-text"> <br>1500 </p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="1">Agregar al
             carrito</a>
         </div>
       </div>
@@ -87,8 +137,8 @@
         <img src="../imagenes/POCAHONTAS1.jpg" class="foto" alt="...">
         <div class="card-body">
           <h5 class="card-title">Conjunto Pocahontas</h5>
-          <p class="card-text"> <br>$1500 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <p class="card-text"> <br>1500 </p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="2">Agregar al
             carrito</a>
         </div>
       </div>
@@ -98,8 +148,8 @@
         <img src="../imagenes/JASMIN.jpeg" class="foto" alt="...">
         <div class="card-body">
           <h5 class="card-title">Conjunto Jasmín</h5>
-          <p class="card-text"> <br>$1200 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <p class="card-text"> <br>1200 </p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="3">Agregar al
             carrito</a>        
           </div>
       </div>
@@ -109,8 +159,8 @@
         <img src="../imagenes/AURORA.jpeg" class="foto" alt="...">
         <div class="card-body">
           <h5 class="card-title">Conjunto Aurora</h5>
-          <p class="card-text"> <br>$1600 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <p class="card-text"> <br>1600 </p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="4">Agregar al
             carrito</a>        
           </div>
       </div>
@@ -123,9 +173,9 @@
         <img src="../imagenes/BODY.jpg" class="foto" alt="...">
         <img src="../imagenes/BODY1.jpg" class="foto" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Body</h5>
-          <p class="card-text">Body de encaje <br>$2100 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <h5 class="card-title">Body de encaje</h5>
+          <p class="card-text"><br>2100</p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="5">Agregar al
             carrito</a>
                   </div>
       </div>
@@ -152,13 +202,13 @@
 
         <div class="card-body">
           <h5 class="card-title">Coulotteless</h5>
-          <p class="card-text">Packx3 CoulotteLess de algodón con Encaje <br>$2000 </p>
-          <a href="#" class="btn btn-primary" id="btnAgregarCarrito">Agregar al
+          <p class="card-text"><br>2000 </p>
+          <a href="#" class="btn btn-primary" id="btnAgregarCarrito" data-id="6">Agregar al
             carrito</a>
                   </div>
       </div>
 
-
+      
 
 
 
