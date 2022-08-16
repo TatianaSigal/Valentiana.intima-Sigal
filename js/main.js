@@ -115,6 +115,7 @@ const sumarCarrito = () => {
         fragment.appendChild(clone)
     })
     items.appendChild(fragment)
+    toasti(productos.nombre,"#00b09b","#96c93d");
   }
 
   const resetFooter = () => {
@@ -169,3 +170,16 @@ const btnAumentarDisminuir = e => {
       }
       e.stopPropagation()
   }
+
+  function toasti(mensaje,color1,color2){
+    Toastify({
+        text: mensaje,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: `linear-gradient(to right, ${color1}, ${color2})`,
+        },
+        duration: 3000
+    }).showToast();
+}
