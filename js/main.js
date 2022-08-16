@@ -113,9 +113,10 @@ const sumarCarrito = () => {
 
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
+       
     })
     items.appendChild(fragment)
-    toasti(productos.nombre,"#00b09b","#96c93d");
+    
   }
 
   const resetFooter = () => {
@@ -171,15 +172,18 @@ const btnAumentarDisminuir = e => {
       e.stopPropagation()
   }
 
-  function toasti(mensaje,color1,color2){
-    Toastify({
-        text: mensaje,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-        background: `linear-gradient(to right, ${color1}, ${color2})`,
-        },
-        duration: 3000
-    }).showToast();
-}
+
+
+Swal.fire({
+  title: 'QUE TENGAS UNA HERMOSA COMPRA ♥',
+  width: 600,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+})
